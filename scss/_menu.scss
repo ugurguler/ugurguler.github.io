@@ -108,6 +108,7 @@
 
     &.current > a {
       color: $secondary-color;
+      text-transform: uppercase;
     }
   }
 
@@ -115,7 +116,7 @@
     display: inline-block;
     position: relative;
     font-size: 2rem;
-    text-transform: uppercase;
+   // text-transform: uppercase;
     padding: 0.3rem 0;
     font-weight: 300;
     color: set-text-color($primary-color);
@@ -124,7 +125,13 @@
 
     &:hover {
       color: $secondary-color;
+      text-transform: uppercase;
     }
+    &:active {
+        font-weight: 900;
+        @include easeOut;
+        
+      }
   }
 }
   

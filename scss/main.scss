@@ -2,7 +2,7 @@
   
 @import 'config';
 @import 'menu';
-@import 'mobile';
+
 
 
 
@@ -36,7 +36,7 @@ h3 {
   }
   &.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0.5rem;
     background: rgba(lighten($primary-color, 1), 0.2);
     display: inline-block;
     border-radius: 30px;
@@ -61,7 +61,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -72,6 +72,7 @@ main {
       &:hover {
         color: $secondary-color;
         @include easeOut();
+         
       }
     }
   }
@@ -83,3 +84,49 @@ main {
     }
   }
 }
+
+// about page
+
+.about-info {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-areas:
+      'bio bio bio'
+      'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+
+    
+    .bio{
+        grid-area:bio;
+    }
+    .job-1{
+        grid-area: job1;
+    }
+    .job-2{
+        grid-area: job2;
+    }
+    .job-3{
+        grid-area: job3;
+    }
+
+    .job{
+        background: lighten($primary-color,5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+    }
+
+
+}
+
+
+#main-footer {
+ 
+    text-align: center;
+    padding: 1rem;
+    background:darken($primary-color, 10);
+    height:60px;
+
+     
+}
+
+@import 'mobile';

@@ -167,7 +167,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 40px;
-  grid-template-areas: 'bio bio bio' 'job1 job2 job3';
+  grid-template-areas: "bio bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio {
     grid-area: bio; }
@@ -207,6 +207,40 @@ main {
 .btn-dark {
   background: black;
   color: #fff; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2rem; }
+  .boxes .box1 {
+    transition: all 0.5s ease-out;
+    font-size: 1.5rem;
+    border: 2px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem; }
+    .boxes .box1:hover {
+      cursor: pointer;
+      font-size: 2rem;
+      border: none;
+      transition: all 0.5s ease-out; }
+      .boxes .box1:hover span {
+        display: block;
+        opacity: 0; }
+  .boxes .box2 {
+    transition: all 0.5s ease-out;
+    font-size: 1.5rem;
+    border: 2px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem; }
+    .boxes .box2:hover {
+      cursor: pointer;
+      font-size: 2rem;
+      border: none;
+      transition: all 0.5s ease-out; }
+      .boxes .box2:hover span {
+        display: block;
+        opacity: 0; }
 
 #main-footer {
   text-align: center;

@@ -53,12 +53,12 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
       background: url("../img/portrait.jpg");
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px #faa702; }
+      border: solid 1px #faa702; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -70,7 +70,7 @@
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 0.3rem 0;
     font-weight: 300;
     color: #fff;
@@ -80,7 +80,7 @@
       color: #faa702;
       text-transform: uppercase; }
     .menu .nav-link:active {
-      font-weight: 900;
+      font-weight: 950;
       transition: all 0.5s ease-out; }
 
 .nav-item:nth-child(1) {

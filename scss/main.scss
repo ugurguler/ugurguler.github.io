@@ -80,7 +80,9 @@ main {
 // about page
 
 .about-info {
+  
   display: grid;
+  
    grid-gap: 50px;
   grid-template-areas:
     "bio bio bio"
@@ -89,6 +91,7 @@ main {
 
   .bio {
     grid-area: bio;
+    
     
   }
   
@@ -107,6 +110,7 @@ h3{
 
     h6{
       color: $secondary-color;
+      
       font-size: 0.8rem;
       
       
@@ -117,9 +121,11 @@ h3{
 
   .job-2 {
     grid-area: job2;
+    
 
     h3{
       font-size: 1.4rem;
+      
     }
     h6{
       color: $secondary-color;

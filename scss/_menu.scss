@@ -78,6 +78,7 @@
 
   // Branding Side
   &-branding {
+    
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
@@ -88,12 +89,13 @@
     }
 
     .portrait {
-      width: 250px;
-      height: 250px;
+      
+      width: 300px;
+      height: 300px;
       background: url("../img/portrait.jpg");
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px $secondary-color;
+      border: solid 1px $secondary-color;
     }
   }
 
@@ -115,8 +117,8 @@
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 2rem;
-   // text-transform: uppercase;
+    font-size: 3rem;
+     //text-transform: uppercase;
     padding: 0.3rem 0;
     font-weight: 300;
     color: set-text-color($primary-color);
@@ -128,13 +130,11 @@
       text-transform: uppercase;
     }
     &:active {
-        font-weight: 900;
-        @include easeOut;
-        
-      }
+      font-weight: 950;
+      @include easeOut;
+    }
   }
 }
-  
 
 // ---------------------- Slide by 0.1s
 @for $x from 1 through 4 {

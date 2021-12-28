@@ -57,7 +57,7 @@
       height: 300px;
       background: url("../img/portrait.jpg");
       background-size: cover;
-      border-radius: 50%;
+      border-radius: 60%;
       border: solid 1px #faa702; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);

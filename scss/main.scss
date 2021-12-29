@@ -243,9 +243,13 @@ h3{
 
 #main-footer {
   text-align: center;
-  padding: 1rem;
-  background: darken($primary-color, 10);
-  height: 60px;
+  padding:1rem;
+  background: darken($primary-color, 1);
+  height: 50px;
+  
+  width: 100%;
+  bottom: 0;
+  position: absolute;
 }
 
 @import "mobile";
